@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – PixOrg</title>
+  <meta name="description" content="PixOrg privacy policy: all photo processing happens on your device. Nothing about your photos ever leaves it." />
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+    h1 { font-size: 2rem; margin-bottom: 4px; }
+    h2 { font-size: 1.2rem; margin-top: 36px; color: #1e1b4b; }
+    p, li { font-size: 0.97rem; }
+    ul { padding-left: 20px; }
+    a { color: #3730a3; }
+    .meta { color: #666; font-size: 0.88rem; margin-bottom: 32px; }
+    .callout {
+      background: #eef0ff;
+      border-left: 4px solid #3730a3;
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 24px 0;
+    }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 0.93rem; }
+    th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid #e5e5e5; }
+    th { background: #f7f7f9; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 40px 0; }
+  </style>
+</head>
+<body>
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">App: <strong>PixOrg</strong> &nbsp;|&nbsp; Package: com.pixorg.pixorg &nbsp;|&nbsp; Last updated: 6 Sep 2026</p>
+
+  <p>
+    PixOrg ("we", "our", or "the app") is a private photo gallery for Android that lets you
+    find any photo by the text or the scene in it. All recognition and search happens on your
+    phone. This Privacy Policy explains what data the app accesses, how it is used, and your
+    rights as a user.
+  </p>
+
+  <div class="callout">
+    <strong>The short version:</strong> your photos, the text recognised in them, and the AI
+    "fingerprints" used for search never leave your device. We run no servers, have no user
+    accounts, and include no analytics or advertising SDKs. We cannot see your photos even if
+    we wanted to.
+  </div>
+
+  <h2>1. Data We Access on Your Device</h2>
+  <ul>
+    <li>
+      <strong>Photos and videos:</strong> With your permission (Photos and videos access), the
+      app reads the images stored on your phone to display them as a gallery. You can grant
+      access to all photos or only to selected ones; the app works with whatever you choose.
+    </li>
+    <li>
+      <strong>Text recognised in photos (OCR):</strong> The app runs on-device text recognition
+      (Google ML Kit, offline model) so you can search for words that appear in receipts,
+      whiteboards, screenshots and documents. The recognised text is stored in the app's private
+      storage on your phone and nowhere else.
+    </li>
+    <li>
+      <strong>AI image fingerprints (embeddings):</strong> A small vision model (MobileCLIP, run
+      with ONNX Runtime) turns each photo into a list of numbers that describes what the picture
+      looks like. These numbers power "looks like" search. They are computed and stored on your
+      device only and cannot be turned back into the original photo.
+    </li>
+    <li>
+      <strong>Photo location (EXIF GPS):</strong> If a photo already contains location data
+      recorded by your camera, the app reads it to place the photo on the Map view. The app never
+      uses your phone's GPS and never records where you are.
+    </li>
+    <li>
+      <strong>Ratings, tags and albums:</strong> Star ratings, tags and smart-album rules you
+      create are stored in the app's local database. If you enable XMP sync, ratings and tags are
+      also written into the photo file itself (or a sidecar file next to it) so other photo apps
+      can read them. Each write to a file you own is confirmed through the Android system dialog.
+    </li>
+    <li>
+      <strong>Receipts export:</strong> When you export receipts as a CSV file, the file is
+      handed to the Android share sheet. Where it goes from there is entirely your choice.
+    </li>
+    <li>
+      <strong>Vault:</strong> Photos you move into the Vault are encrypted with AES-256-GCM using
+      a key stored in your phone's secure keystore, and are unlocked with your device biometrics
+      or screen-lock credential. The app never sees or stores your fingerprint or face data;
+      Android handles that check and only tells the app whether it succeeded.
+    </li>
+  </ul>
+
+  <h2>2. Data That Leaves Your Device</h2>
+  <p>
+    No photo, recognised text, AI fingerprint, tag, rating or location is ever transmitted to
+    us or to anyone else. The app connects to the internet for only two purposes:
+  </p>
+  <table>
+    <tr><th>Purpose</th><th>Who receives what</th></tr>
+    <tr>
+      <td><strong>Map tiles</strong> (only when you open the Map view)</td>
+      <td>
+        Map images are downloaded from OpenStreetMap tile servers. As with any web request, the
+        tile server sees your IP address and which map areas you view. It does not receive your
+        photos or their coordinates individually. Subject to the
+        <a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank">OpenStreetMap Foundation Privacy Policy</a>.
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Purchases</strong> (only if you buy PixOrg Pro)</td>
+      <td>
+        Payments are processed by Google Play Billing, and subscription status is managed through
+        RevenueCat. See Section 4.
+      </td>
+    </tr>
+  </table>
+  <p>
+    Everything else, including the AI models, is shipped inside the app and runs fully offline.
+    You can use every feature except the Map view and purchases with the internet switched off.
+  </p>
+
+  <h2>3. Analytics and Crash Reporting</h2>
+  <p>
+    PixOrg contains <strong>no analytics, advertising, or crash-reporting SDKs</strong>. We do not
+    receive usage statistics, device identifiers, or crash reports from the app. If you choose to
+    share a crash report through Google Play, that report is governed by
+    <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.
+  </p>
+
+  <h2>4. Subscriptions and Payments</h2>
+  <p>
+    PixOrg is free to use, with an optional <strong>PixOrg Pro</strong> upgrade sold as an in-app
+    purchase. Payment is processed entirely by <strong>Google Play</strong>; we never see your card
+    or payment details. Subscription entitlements are checked through <strong>RevenueCat</strong>,
+    which receives a random, app-generated identifier and your purchase receipt from Google Play
+    in order to confirm that your subscription is active. RevenueCat does not receive your photos,
+    your name, or your email address. RevenueCat's handling of purchase data is described in its
+    <a href="https://www.revenuecat.com/privacy" target="_blank">Privacy Policy</a>; Google Play's is in
+    <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.
+  </p>
+
+  <h2>5. Data We Do Not Collect</h2>
+  <ul>
+    <li>We do not collect, upload or back up your photos or videos.</li>
+    <li>We do not collect the text recognised in your photos or the AI fingerprints derived from them.</li>
+    <li>We do not collect your location, contacts, camera feed, or biometric data.</li>
+    <li>We do not require or create a user account, and we do not collect your name or email.</li>
+    <li>We do not sell, rent or share any data with advertisers or data brokers.</li>
+    <li>We do not use your photos or any derived data to train AI models. The models in the app are fixed and never learn from your library.</li>
+  </ul>
+
+  <h2>6. Data Retention and Deletion</h2>
+  <p>
+    Everything the app creates (the search index, recognised text, AI fingerprints, ratings, tags,
+    smart albums, receipts data and the Vault) lives in the app's private storage on your phone
+    and remains entirely under your control. To delete it:
+  </p>
+  <ul>
+    <li><strong>Search index:</strong> Settings → AI index → Re-index rebuilds it from scratch.</li>
+    <li><strong>Vault:</strong> restore photos to your gallery from the Vault screen before uninstalling, otherwise they are deleted with the app.</li>
+    <li><strong>Everything:</strong> Android Settings → Apps → PixOrg → Clear data, or uninstall the app. This removes the index, the Vault and its encryption keys.</li>
+  </ul>
+  <p>
+    Ratings and tags that you chose to write into photo files with XMP sync stay in those files,
+    because they belong to you; you can clear them in the app before turning XMP sync off.
+    Because we hold no data about you on any server, there is nothing for us to delete on our side.
+  </p>
+
+  <h2>7. Permissions Explained</h2>
+  <table>
+    <tr><th>Permission</th><th>Why the app asks for it</th></tr>
+    <tr><td>Photos and videos</td><td>To show your gallery and build the on-device search index. This is the core function of the app.</td></tr>
+    <tr><td>Media location</td><td>To read the GPS tags already stored in your photos for the Map view.</td></tr>
+    <tr><td>Biometrics</td><td>To unlock the Vault with your fingerprint, face or screen lock.</td></tr>
+    <tr><td>Notifications / run at boot</td><td>To continue indexing new photos in the background while your phone is idle and charging, and to show indexing progress.</td></tr>
+    <tr><td>Internet</td><td>Map tiles and purchases only (see Section 2).</td></tr>
+    <tr><td>Google Play Billing</td><td>To offer the optional Pro upgrade.</td></tr>
+  </table>
+  <p>
+    The app does not request "All files access", fine location, camera, contacts, microphone or
+    phone permissions.
+  </p>
+
+  <h2>8. Children's Privacy</h2>
+  <p>
+    PixOrg is not directed at children under the age of 13. Because the app collects no personal
+    information from anyone, it collects none from children either. If you believe a child has
+    contacted us with personal information, please let us know so we can delete it.
+  </p>
+
+  <h2>9. Security</h2>
+  <p>
+    The app's database and index are stored in Android's app-private storage, which other apps
+    cannot read. Vault photos are encrypted with AES-256-GCM under a key held in the Android
+    keystore and protected by your device credential. Because no user data is transmitted, there
+    is no data in transit to secure. We still recommend keeping your phone's screen lock enabled.
+  </p>
+
+  <h2>10. Changes to This Policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time, for example if a future version adds an
+    optional online feature. When we do, we will update the "Last updated" date at the top of
+    this page and describe any new data flow clearly. Continued use of the app after changes
+    constitutes acceptance of the updated policy.
+  </p>
+
+  <h2>11. Contact Us</h2>
+  <p>
+    If you have any questions or concerns about this Privacy Policy, please contact us at:<br />
+    <a href="mailto:pixorg.support@gmail.com">pixorg.support@gmail.com</a>
+  </p>
+
+  <hr />
+  <p class="meta" style="text-align:center;">© 2026 PixOrg. All rights reserved.</p>
+
+</body>
+</html>
